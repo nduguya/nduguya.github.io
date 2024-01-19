@@ -1,0 +1,64 @@
+.you2,
+.you4,
+.you6,
+.you8{
+    background: #276b80;
+}
+
+
+.you1,
+.you3,
+.you5,
+.you7{
+    background:#e9f5f8 ;
+}
+
+
+
+.you1 h1,
+.you3 h1,
+.you5 h1,
+.you7 h1{
+    color:#032b56;
+    font-size: xxx-large;
+    font-weight: bolder;
+}
+
+.you1 h4,
+.you3 h4,
+.you5 h4,
+.you7 h4{
+    color: brown;
+}
+
+.you1 h3,
+.you3 h3,
+.you5 h3,
+.you7 h3{
+    color:blue;
+}
+
+.you1 p,
+.you3 p,
+.you5 p,
+.you7 p{
+    color:#041e39;
+}
+
+.quality3 img{
+    padding-top: 0.5rem;
+}
+
+.bizna{
+    margin-bottom: 1rem;
+    background: #0000ff;
+    color: white;
+    
+}
+
+
+@media screen and (max-width:1024px) {
+    .bizna{
+        margin-left: 25vw;
+    }
+}
