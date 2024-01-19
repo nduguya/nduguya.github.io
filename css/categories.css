@@ -62,15 +62,19 @@ body{
 
 
 
-
+/*categories section*/
 .categories{
     background-color: var(--color-bg1);
+      margin-left:2.5rem;
+   margin-right:2.5rem;
+   margin-top:2.5rem;
     
     /*height:32rem;*/
 }
 .categories h1{
     color:#bdaaaa;
     line-height: 1;
+    font-weight: bold;
     margin-bottom: 3rem;
 }
 .categories__container{
@@ -183,10 +187,6 @@ grid-template-columns: 40% 60%;
 
 
 
-.footer__container{
-    grid-template-columns: 1fr 1fr;
-   
-}
 
 
     
