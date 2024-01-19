@@ -3,9 +3,9 @@
     padding: 0;
     border:0;
     outline: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none !important;
+    box-sizing: border-box !important;
  
   }
 
@@ -54,8 +54,8 @@
 
 
 body{
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.7;
+    font-family: 'Montserrat', sans-serif !important;
+    line-height: 1.7 !important;
     color: var(--color-white);
     background:#e9f5f8;
     /*background-color: var(--color-bg);*/
@@ -66,7 +66,7 @@ body{
     margin:0 auto;
  }
  section{
-    padding: 6rem 0;
+    padding: 6rem 0 !important;
 
  }
 
@@ -77,28 +77,29 @@ body{
  }
 
  h1,h2,h3,h4,h5{
-    line-height: 1.2;
+    line-height: 1.2 !important;
  }
  h1{
-   font-size: 2.4rem;  
+   font-size: 2.4rem !important;  
  }
  h2{
-    font-size: 2rem;
+    font-size: 2rem !important;
  }
  h3{
-    font-size: 1.6rem;
+    font-size: 1.6rem !important;
  }
  h4{
-    font-size: 1.3rem;
+    font-size: 1.3rem !important;
  }
 
  a{
-    color:var(--color-white);
+    color:var(--color-white) !important;
+     text-decoration: none;
  }
  img{
-    width: 100%;
-    display: block;
-    object-fit: cover;
+    width: 100% !important;
+    display: block !important;
+    object-fit: cover !important;
  }
  .btn{
     display: inline-block;
@@ -161,8 +162,8 @@ nav{
 
 
  .nav__menu a{
-   font-size: 0.9rem;
-   font-weight: bold;
+   font-size: 0.9rem !important;
+   font-weight: bold !important;
    transition: all 400ms ease;
  }
 
@@ -174,7 +175,7 @@ color: #032B56;
 #header {
   background-image: url("./images/header_image.jpeg"); /* Replace with your image path */
   background-size: cover;
-  background-position: center;
+  background-position: center !important;
   height: 70vh; /* Adjust as needed */
   position: relative;
   top: 6.8rem;
@@ -190,7 +191,7 @@ color: #032B56;
 }
 
 .header-content h1 {
-  font-size: 3rem;
+  font-size: 3rem !important;
   margin-bottom: 0.5rem;
   color:white;
   white-space: nowrap;
@@ -198,8 +199,8 @@ color: #032B56;
 }
 
 .header-content p {
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
   color:white;
 }
 
@@ -215,8 +216,8 @@ color: #032B56;
     background-color: var(--color-bg2);
 }
 .courses__container{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    display:grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
     gap: 2rem;
 }
 
@@ -229,9 +230,9 @@ color: #032B56;
   color:#032B56;
   padding-top: 2rem;
   text-align: center;
-  font-size: 3rem;
+  font-size: 3rem !important;
   padding-bottom: 1rem;
-  font-weight: bolder;
+  font-weight: bolder !important;
 }
 
 /*.tablet-course{
@@ -258,7 +259,7 @@ color: #032B56;
 
 .course__info p{
     margin: 1.2rem 0 2rem;
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
     color: #E6EAEF;
 }
 
@@ -296,8 +297,8 @@ margin: 1.6rem 0 2.5rem;
 }
 .categories h1{
   color:#E6EAFF;
-  line-height: 1;
-  margin-bottom: 3rem;
+  line-height: 1 !important;
+  margin-bottom: 3rem !important;
 }
 .categories__container{
 display: grid;
@@ -306,7 +307,7 @@ grid-template-columns: 40% 60%;
 }
 
 .categories__left p{
-  margin: 1rem 0 3rem;
+  margin: 1rem 0 3rem !important;
   color:#bdaaaa;
 }
 
@@ -370,7 +371,7 @@ grid-template-columns: 40% 60%;
   color:#032B56;
 }
 .category p{
-  font-size: 0.85rem;
+  font-size: 0.85rem !important;
   
 }
 
@@ -427,21 +428,21 @@ grid-template-columns: 40% 60%;
     /*
     height: fit-content;
     */
-    height: 18vh;
+    height: 11vh;
     background: #276b80;
     cursor:pointer;
 }
 
 .faq h4{
-    font-size: 1rem;
-    line-height: 2.2;
+    font-size: 1rem !important;
+    line-height: 2.2 !important;
 
 }
 
 .faq__icon{
     padding-top:3.5vh ;
     align-self: flex-start;
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
 }
 
 .faq p{
@@ -466,13 +467,13 @@ grid-template-columns: 40% 60%;
 footer{
     background: #276b80;
     padding-top: 5rem;
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
 
 }
 
 .footer h3{
    color:#01BD2F;
-   font-weight:bold;
+   font-weight:bold !important;
 }
 
 .footer p{
@@ -507,7 +508,7 @@ footer{
  .footer__socials{
     display: flex;
     gap:1rem;
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
     margin-top: 2rem;
 
  }
@@ -531,16 +532,16 @@ footer{
         width: var(--container-width-md);
     }
     h1{
-        font-size: 2.2rem;
+        font-size: 2.2rem !important;
     }
     h2{
-        font-size: 1.7rem;
+        font-size: 1.7rem !important;
     }
     h3{
-        font-size: 1.4rem;
+        font-size: 1.4rem !important;
     }
     h4{
-        font-size: 1.2rem;
+        font-size: 1.2rem !important;
     }
 
 
@@ -548,7 +549,7 @@ footer{
   nav button{
     display: inline-block;
     background: transparent;
-    font-size: 2.2rem;
+    font-size: 2.2rem !important;
     color: var(--color-white);
     cursor:pointer;
   }
@@ -559,7 +560,7 @@ footer{
   .nav__menu{
     position: fixed;
     top:6.8rem;
-    right:0;
+    right:0 !important;
     height:fit-content;
     width: 85vw;
     flex-direction: column;
@@ -605,8 +606,8 @@ footer{
     height: 100%;
     display: grid;
     place-items: center;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 25px !important;
+    font-weight: bold !important;
     place-items: center;
  }
 
@@ -624,7 +625,7 @@ footer{
     margin-top: 0;
 }
 .courses__container{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr !important;
 }
 .tablet-course{
     visibility:hidden;
@@ -642,7 +643,7 @@ footer{
 
 }
 .categories__container{
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr !important;
   gap:3rem;
 }
 .categories__left{
@@ -675,7 +676,7 @@ footer{
 }
 .faq{
     padding:1.5rem;
-    height:22vh;
+    height:17vh;
 }
  
 
@@ -691,7 +692,7 @@ footer{
 
 @media (max-width: 768px) {
     .header-content h1{
-      font-size: 2.6rem;
+      font-size: 2.6rem !important;
     }
 
     
@@ -711,7 +712,7 @@ footer{
 }
 
 .faq{
-  height: 25vh;
+  height: 20vh;
 }
     
   }
