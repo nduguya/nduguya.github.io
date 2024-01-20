@@ -550,6 +550,11 @@ footer{
 
 
 @media screen and (max-width:1024px){
+    body{
+        
+    overflow-x:hidden;
+    width:fit-content;
+    }
     .container{
         width: var(--container-width-md);
     }
