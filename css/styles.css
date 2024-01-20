@@ -59,6 +59,8 @@ body{
     color: var(--color-white);
     background:#e9f5f8;
     width:100%;
+    overflow: hidden;
+    
     /*background-color: var(--color-bg);*/
  }
 
@@ -182,7 +184,8 @@ color: #032B56;
   height: 69vh; /* Adjust as needed */
   position: relative;
   top: 6.8rem;
-    overflow:hidden;
+  overflow:hidden;
+  width:fit-content;
 }
 
 .header-content {
@@ -303,6 +306,7 @@ margin: 1.6rem 0 2.5rem;
 
 .categories{
   background-color: var(--color-bg1);
+    width:fit-content;
   /*height:32rem;*/
     /* margin-left:2.5rem;
    margin-right:2.5rem;
@@ -398,6 +402,7 @@ grid-template-columns: 40% 60%;
     box-shadow: inset 0 0 3rem rgba(0,0,0,0.5);
     background: #276b80;
     margin:0 1.1rem;
+    width:fit-content;
 }
 .kcse h1{
    padding-left: 1rem;
