@@ -181,7 +181,7 @@ color: #032B56;
 
 
 #header {
-  background-image: url("./images/header_image.jpeg"); /* Replace with your image path */
+  background-image: url("./images/homepageheader.jpg"); /* Replace with your image path */
   background-size: cover;
   background-position: center !important;
   height: 69vh; /* Adjust as needed */
