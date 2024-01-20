@@ -3,9 +3,9 @@
     padding: 0;
     border:0;
     outline: 0;
-    text-decoration: none !important;
-    list-style: none !important;
-    box-sizing: border-box !important;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
  
   }
 
@@ -55,7 +55,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif !important;
-    line-height: 1.7 !important;
+    line-height: 1.7;
     color: var(--color-white);
     background:#e9f5f8;
     width:100%;
@@ -108,7 +108,7 @@ body{
     color: var(--color-black);
     padding:1rem 2rem;
     border: 1px solid transparent;
-    font-family: 500;
+    
     transition: var(--transition);
     border-radius: 35px;
  }
@@ -139,7 +139,7 @@ nav{
  }
 
  .window-scroll{
-    background: #276b80;
+    /*background: #276b80;*/
     box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
  }
 
@@ -156,6 +156,7 @@ nav{
  }
 
  .nav__menu{
+    height:fit-content;
     display:flex;
     align-items: center;
     gap:4rem;
@@ -163,8 +164,9 @@ nav{
 
 
  .nav__menu a{
-   font-size: 0.9rem !important;
-   font-weight: bold !important;
+    color: white;
+   font-size: 18px;
+   font-weight: bold;
    transition: all 400ms ease;
  }
 
@@ -177,9 +179,10 @@ color: #032B56;
   background-image: url("./images/header_image.jpeg"); /* Replace with your image path */
   background-size: cover;
   background-position: center !important;
-  height: 70vh; /* Adjust as needed */
+  height: 69vh; /* Adjust as needed */
   position: relative;
   top: 6.8rem;
+    overflow:hidden;
 }
 
 .header-content {
@@ -216,25 +219,30 @@ color: #032B56;
     margin-top: 0rem;
     background-color: var(--color-bg2);
 }
-.courses__container{
-    display:grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 2rem;
-}
-
-.courses h2{
-    color:#032B56;
-    padding-top: 2rem;
-}
 
 .courses h1{
   color:#032B56;
   padding-top: 2rem;
   text-align: center;
-  font-size: 3rem !important;
+  font-size: 3rem;
   padding-bottom: 1rem;
-  font-weight: bolder !important;
+  font-weight: bolder;
 }
+
+.courses h2{
+    color:#032B56;
+    font-weight:bold;
+    padding-top: 2rem;
+}
+.courses__container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
+
+
 
 /*.tablet-course{
     visibility: hidden;
@@ -260,14 +268,15 @@ color: #032B56;
 
 .course__info p{
     margin: 1.2rem 0 2rem;
-    font-size: 0.9rem !important;
     color: #E6EAEF;
 }
 
 
+
+
 /*who are we section*/
 .about__achievements{
-  margin-top: 0rem;
+  margin-top: 2.5rem;
  /* box-shadow: inset 0 0 3rem rgba(0,0,0,0.5);*/
   
 }
@@ -295,11 +304,15 @@ margin: 1.6rem 0 2.5rem;
 .categories{
   background-color: var(--color-bg1);
   /*height:32rem;*/
+     margin-left:2.5rem;
+   margin-right:2.5rem;
+   margin-top:2.5rem;
 }
 .categories h1{
   color:#E6EAFF;
-  line-height: 1 !important;
-  margin-bottom: 3rem !important;
+  line-height: 1;
+    font-weight:bold;
+  margin-bottom: 3rem;
 }
 .categories__container{
 display: grid;
@@ -308,7 +321,7 @@ grid-template-columns: 40% 60%;
 }
 
 .categories__left p{
-  margin: 1rem 0 3rem !important;
+  margin: 1rem 0 3rem;
   color:#bdaaaa;
 }
 
@@ -378,6 +391,9 @@ grid-template-columns: 40% 60%;
 
 
 
+
+
+/*kcse*/
 .kcse{
     box-shadow: inset 0 0 3rem rgba(0,0,0,0.5);
     background: #276b80;
@@ -386,6 +402,7 @@ grid-template-columns: 40% 60%;
 .kcse h1{
    padding-left: 1rem;
     color:#E6EAFF;
+    font-weight:bold;
     /*text-shadow: 0 0 5px #000; */
 }
 
@@ -426,24 +443,23 @@ grid-template-columns: 40% 60%;
     display: flex;
     align-items: center;
     gap: 1.4rem;
-    /*
+
     height: fit-content;
-    */
-    height: 11vh;
+/*    height: 11vh;*/
     background: #276b80;
     cursor:pointer;
 }
 
 .faq h4{
-    font-size: 1rem !important;
-    line-height: 2.2 !important;
+    font-size: 1.1rem;
+    line-height: 2.2;
 
 }
 
 .faq__icon{
-    padding-top:3.5vh ;
+    /*padding-top:3.5vh;*/
     align-self: flex-start;
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
 }
 
 .faq p{
@@ -468,7 +484,7 @@ grid-template-columns: 40% 60%;
 footer{
     background: #276b80;
     padding-top: 5rem;
-    font-size: 0.9rem !important;
+    font-size: 0.9rem;
 
 }
 
@@ -533,24 +549,30 @@ footer{
         width: var(--container-width-md);
     }
     h1{
-        font-size: 2.2rem !important;
+        font-size: 2.2rem;
     }
     h2{
-        font-size: 1.7rem !important;
+        font-size: 1.7rem;
     }
     h3{
-        font-size: 1.4rem !important;
+        font-size: 1.4rem;
     }
     h4{
-        font-size: 1.2rem !important;
+        font-size: 1.2rem;
     }
 
+.about-header h1{
+    padding-top: 25vh;
+}
 
+
+
+    
     /*navbar*/
   nav button{
     display: inline-block;
     background: transparent;
-    font-size: 2.2rem !important;
+    font-size: 2.2rem;
     color: var(--color-white);
     cursor:pointer;
   }
@@ -606,9 +628,8 @@ footer{
     width: 100%;
     height: 100%;
     display: grid;
-    place-items: center;
-    font-size: 25px !important;
-    font-weight: bold !important;
+    font-size: 25px;
+    font-weight: bold;
     place-items: center;
  }
 
@@ -616,9 +637,21 @@ footer{
     background: #032B56;
     color: var(--color-white);
  }
- .header-content h1{
-    padding-top: 1.2rem;
- }
+
+
+
+    /**header section**/
+header{
+    height:52vh;
+    margin-bottom: 4rem;
+    
+}
+
+.header__container{
+    gap: 0;
+    padding-bottom: 3rem;
+}
+
 
 /*courses*/
 
@@ -626,13 +659,13 @@ footer{
     margin-top: 0;
 }
 .courses__container{
-    grid-template-columns: 1fr 1fr !important;
+    grid-template-columns: 1fr 1fr;
 }
 .tablet-course{
     visibility:hidden;
 }
 .photos{
-    /*height:156px;*/
+    height:156px;
 }
 
 
@@ -644,7 +677,7 @@ footer{
 
 }
 .categories__container{
-  grid-template-columns: 1fr !important;
+  grid-template-columns: 1fr;
   gap:3rem;
 }
 .categories__left{
@@ -677,7 +710,6 @@ footer{
 }
 .faq{
     padding:1.5rem;
-    height:17vh;
 }
  
 
@@ -738,7 +770,7 @@ footer{
         margin-bottom: 1.3rem;
     }
 
-
+/*categories*/
 .categories__right{
     grid-template-columns: 1fr 1fr;
     gap: 0.7em;
