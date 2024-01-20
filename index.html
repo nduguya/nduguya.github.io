@@ -102,7 +102,7 @@
         </div>
     </nav>
 
-
+<!--
 
     <header id="header" style="background-image: url('./images/homepageheader.jpg');">
         <div class="header-content">
@@ -122,7 +122,70 @@
         
     </style>
 
+-->
 
+
+
+    
+    <header class="about-header">
+        <img src="./images/header_image.jpeg" alt="Background Image" class="about-header-image">
+        <div class="header-text">
+          <h1></h1><br>
+          <p>
+          
+          </p>
+        </div>
+</header>
+
+<style>
+.about-header {
+    top:6.8rem;
+    position: relative;
+    height: 70vh; /* Adjust height as needed */
+    background-color: #000; /* Transparent black to blend with image */
+    background-image: url('./images/header_image.jpeg');
+    background-size: cover; /* Stretch image to fit container */
+    background-position: center; /* Center image  */
+    text-align:start;
+    color: rgb(245, 242, 242); /* Adjust text color for optimal contrast */
+  }
+  
+.about-header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3; /* Adjust opacity for desired image visibility */
+  }
+  
+.about-header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+ .about-header h1 {
+    font-size: 3.5em;
+    margin: 0;
+    padding-top: 10rem;
+    text-shadow: 0 0 5px #000;
+    padding-left: 2rem;
+  }
+  
+ .about-header p {
+    margin: 0;
+    font-weight: bold;
+    padding-left: 2rem;
+    text-shadow: 0 0 5px #000;
+
+  }
+</style>
+
+    
+
+    
 
 
 
