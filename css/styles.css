@@ -58,7 +58,7 @@ body{
     line-height: 1.7;
     color: var(--color-white);
     background:#e9f5f8;
-    width:100%;
+
     
     
     /*background-color: var(--color-bg);*/
@@ -184,7 +184,7 @@ color: #032B56;
   height: 69vh; /* Adjust as needed */
   position: relative;
   top: 6.8rem;
-  overflow:hidden;
+  /*overflow:hidden;*/
   width:fit-content;
 }
 
