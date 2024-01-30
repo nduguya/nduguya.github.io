@@ -97,6 +97,21 @@ body{
     font-size: 1.3rem !important;
  }
 
+
+.heading{
+
+    font-size: 3.4rem;
+    color: #032b56;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+    padding-left: 1rem;
+    border-left: 1rem solid #276b80;
+}
+
+.collo{
+    border-right: 1rem solid #276b80;
+}
+
  a{
     color:var(--color-white) !important;
      text-decoration: none;
