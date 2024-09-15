@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gitugi- Kenya</title>
+
+    <!--font awesome links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <!--icon scout cdn-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+     <!--favicon-->
+     <link rel="icon" href="gallery/KTDA-Default-Blog.webp"type="images/x-icon"/>
+    <!--google fonts cdn-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">    
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+         <!--swiper js link-->
+          <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+       <!--custom css link-->
+       <link rel="stylesheet" href="./css/styles.css">
+       <link rel="stylesheet" href="./css/about.css">
+       <link rel="stylesheet" href="./css/collo.css">
+</head>
+<body>
+      <!--====Header section begins here======-->
+
+<header class="header">
+    <a href="#" class="logo">Gitugi<span>Tea<br>Factory</span></a>
+
+     <nav class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./dropdown.html">About Us</a>
+        <a href="./services.html">FAQs</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./contact.html">Contacts</a>  
+     </nav>
+
+     <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="info-btn" class="fas fa-info-circle"></div>
+        
+       
+     </div>
+
+
+</header>
+
+
+
+<div class="contact-info">
+    
+     <div id="close-contact-info" class="fas fa-times"></div>
+
+    <div class="info">
+        <i class="fas fa-phone"></i>
+        <h3>Call Us</h3>
+        <p><a href="tel:254115738365">+254115738365</a></p>
+        <p><a href="tel:254115738365">020-2342914</a></p>
+    </div>
+
+    <div class="info">
+        <i class="fas fa-envelope"></i>
+        <h3>Email <Address></Address></h3>
+        <p><a href="mailto:">info@gitugi.ktdateas.com</a></p>
+        <!---->
+    </div>
+
+    <div class="info">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Office Address</h3>
+        <p>533-10106, OTHAYA</p>
+        
+    </div>
+
+    <div class="share">
+        <a href="https://www.facebook.com/" class="fab fa-facebook-f" target="_blank"></a>
+        <a href="https://wa.me/254115738365? text=Thank you for contacting Gitugi Tea Factory Ltd.- Kenya" class="fab fa-whatsapp" target="_blank"></a>
+        <a href="#" class="fab fa-twitter" target="_blank"></a>
+        <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"></a>
+    </div>
+
+</div>
+
+
+
+
+
+<!--===========Subscribe section==========-->
+<section class="subscribe" style="
+background: linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./images/new/additional/best_circular_format.JPG);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+opacity:0.9; height: 54.959rem;">
+    <div class="subscribe-content rowzie containery">
+        <div class="dropdown">
+            <div class="select">
+                <span class="selected">
+                    Board of Directors
+                </span>
+                <div class="caret"></div>
+            </div>
+            <ul class="drpmenu">
+                <a href="./board.html"><li class="active">Board of Directors</li></a>
+                <a href="./dropdown.html"><li>About Us</li></a>
+                <a href="./news.html"><li>News & Events</li></a>
+                <a href="./awards.html"><li>Awards & Certificates</li></a>
+                 <a href="./index.html#e-shop"><li>E-Shop</li></a><!----===========**** <a href="#"><li>Annual Reports</li></a>****=====-----><a href="./senior.html"><li>Senior Management</li></a>
+            </ul>
+        </div>
+
+ </div>
+</section>
+
+
+
+
+
+<style>
+    .dropdown{
+       min-width: 27em;
+        position: relative;
+        margin: 2em;
+    }
+    .dropdown *{
+        box-sizing: border-box;
+    }
+    .selected{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .select{
+        background: #345c00;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px goldenrod solid;
+        border-radius: 0.5em;
+        padding: 1em;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    .select-clicked{
+        border: 2px #26489a solid;
+        box-shadow: 0 0 0.8em #26489a;
+    }
+    .select:hover{
+        background-color: #345c00;
+    }
+    .caret{
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 6px solid #fff;
+        transition: 0.3s;
+    }
+
+    .caret-rotate{
+        transform: rotate(180deg);
+    }
+    .drpmenu{
+        list-style: none;
+        padding: 0.2em 0.5em;
+        background-color: #345c00;
+        border: 1px #363a43 solid;
+        box-shadow: 0 0.5em 1em rgba(0, 0, 0,0.2);
+        border-radius: 0.5em;
+        color: #9fa5b5;
+        position: absolute;
+        top: 3em;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        opacity: 0;
+        display: none;
+        transition: 0.2s;
+        z-index: 1;
+    }
+    .drpmenu li{
+        padding: 0.7em 0.5em;
+        margin: 0.3em 0;
+        border-radius: 0.5em;
+        cursor: pointer;
+    }
+    .drpmenu a{
+        text-decoration: none;
+        list-style: none;
+        color: #ffffff;
+        font-size: 2rem;
+        font-weight: 700;
+
+    }
+
+    .drpmenu li:hover{
+        color: #000;
+    }
+    .drpmenu li:hover{
+        background-color: goldenrod;
+    
+    }
+    .active{
+        background-color: goldenrod;
+    }
+    .drpmenu-open{
+        display: block;
+        opacity: 1;
+    }
+</style>
+
+
+<script>
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown =>{
+        const select = dropdown.querySelector('.select');
+        const caret = dropdown.querySelector('.caret');
+        const drpmenu = dropdown.querySelector('.drpmenu');
+        const options = dropdown.querySelectorAll('.drpmenu li');
+        const selected = dropdown.querySelector('.selected');
+
+
+        select.addEventListener('click',()=>{
+            select.classList.toggle('select-clicked');
+            caret.classList.toggle('caret-rotate');
+            drpmenu.classList.toggle('drpmenu-open');
+        });
+
+        options.forEach(option =>{
+            option.addEventListener('click',() => {
+                selected.innerText = option.innerText;
+                select.classList.remove('select-clicked');
+                caret.classList.remove('caret-rotate');
+                drpmenu.classList.remove('drpmenu-open');
+                options.forEach(option => {
+                    option.classList.remove('.active');
+                });
+                option.classList.add('active');
+            });
+        });
+    });
+</script>
+
+
+
+
+
+<!--====SERVICES  SECTION STARTS===-->
+
+<hr style="border-bottom: 2px solid black; margin:2rem;">
+
+<section class="services" id="services">
+    <h1 class="heading">Leadership , Oversight and Governance</h1>
+
+    <div class="box-container____container">
+        <div class="box">
+            <div class="image__box">
+            <img src="./images/new/ELIZABETH-MUTHONI-WAITHANJI.jpg">
+             <h3>Chairperson</h3>   
+        </div>
+       
+        </div>
+
+        <div class="box">
+            <img src="./images/new/Directors/JOHN-MAINA-WANGOMBE.jpg">
+          
+        </div>
+
+
+        <div class="box">
+            <img src="./images/new/Directors/DANIEL-WACHIRA-IRUNGU.jpg">
+       
+        </div>
+
+
+
+          <div class="box">
+            <img src="./images/new/Directors/">
+           <h3>John Kinyua Wangari</h3>
+        </div>
+
+
+
+        <div class="box">
+            <img src="./images/new/Directors/JANE-NJERI-KANYUGO.jpg">
+          
+        </div>
+
+
+
+      
+
+
+
+      
+     
+
+    </div>
+</section>
+
+
+
+
+
+<!--====FOOTER  SECTION STARTS===-->
+
+
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__1 mobile-hide">
+            <a href="" class="footer__logo"><h3>About Us</h3></a>
+            <p>
+          Nestled amidst lush green fields in Nyeri county, we are a renowned tea factory dedicated to crafting exceptional tea experiences. We are rapidly rising as the premier tea factory in Kenya, recognized for our unwavering commitment to excellence. Come join us. </p>
+        </div>
+        <div class="footer__2 mobile-hide">
+            <h3>Gitugi<span style="color:var(--white);">Tea </span>Factory</h3>
+            <ul class="permalinks">
+                <li><a href="./index.html"><b>Home</b></a></li>
+                <li><a href="./dropdown.html"><b>About Us</b></a></li>
+                <li><a href="./categories.html"><b>Categories</b></a></li>
+                
+                <li><a href="./services.html"><b>Our Services</b></a></li>
+            </ul>
+        </div>
+
+        <div class="footer__3 mobile-hide">
+            <h3>About Us&#128187;</h3>
+            <p><b><a href="./board.html">Board of Directors</a></b></p>
+            <p><b><a href="./news.html">News & Events</a></b></p>
+            <p><b><a href="./awards.html">Awards & Certificates</a></b></p>
+            <p><b><a href="./senior.html">Senior Management</a></b></p>
+            <p><b><a href="./index.html#e-shop">Our E-Shop</a></b></p>
+        </div>
+
+
+        <div class="footer__4">
+            <h3>Contact Us &#9742; &#128231;</h3>
+            <p>Reach us through:</p>
+            <div>
+                <p><b>0115738365</b></p>
+                <hr>
+                <p><b>020-2342914</b></p>
+                <hr>
+                <a href="info@gitugi.ktdateas.com"><b>info@gitugi.ktdateas.com</b></a>
+
+            </div>
+            <ul class="footer__socials">
+                <li><a href="https://wa.me/254114138091? text=Thank you for contacting TechHold Developers Company-Kenya.&nbsp; Let us embrace the digital world together. We'll make you a website you'll love"><i class="uil uil-whatsapp"></i></a></li>
+                <li><a href="#"><i class="uil uil-facebook"></i></a></li>
+                <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+                <li><a href="#"><i class="uil uil-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        
+    </div>
+    <div class="footer__copyright">
+        <small>Copyright &copy; Gitugi Tea Factory Company Limited- Kenya</small>
+    </div>
+</footer>
+
+<!--====FOOTER SECTION ENDS===-->
+<style>
+    .collo{
+        border-right: 1rem solid var(--yellow);
+    }
+</style>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="./main.js"></script>
+  <script>
+    var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?64007';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+    "enabled":true,
+    "chatButtonSetting":{
+        "backgroundColor":"#345c00",
+        "ctaText":"Chat with us",
+        "borderRadius":"25",
+        "marginLeft": "0",
+        "marginRight": "20",
+        "marginBottom": "20",
+        "ctaIconWATI":false,
+        "position":"right"
+    },
+    "brandSetting":{
+        "brandName":"Gitugi Tea Factory",
+        "brandSubTitle":"undefined",
+        "brandImg":"https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
+        "welcomeText":"Thank you, You have reached Gitugi Tea Factory..",
+        "messageText":"Hello, %0A I have a question about......",
+        "backgroundColor":"#345c00",
+        "ctaText":"Chat with Gitugi",
+        "borderRadius":"25",
+        "autoShow":false,
+        "phoneNumber":"254741230513"
+    }
+    };
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
+
+
+
+</body>
+</html>

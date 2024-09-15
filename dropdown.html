@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gitugi- Kenya</title>
+
+    <!--font awesome links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <!--icon scout cdn-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+     <!--favicon-->
+     <link rel="icon" href="gallery/KTDA-Default-Blog.webp"type="images/x-icon"/>
+    <!--google fonts cdn-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">    
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+         <!--swiper js link-->
+          <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+       <!--custom css link-->
+       <link rel="stylesheet" href="./css/styles.css">
+       <link rel="stylesheet" href="./css/about.css">
+       <link rel="stylesheet" href="./css/collo.css">
+</head>
+<body>
+      <!--====Header section begins here======-->
+
+<header class="header">
+    <a href="#" class="logo">Gitugi<span>Tea<br>Factory</span></a>
+
+     <nav class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./dropdown.html">About Us</a>
+        <a href="./services.html">FAQs</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./contact.html">Contacts</a>  
+     </nav>
+
+     <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="info-btn" class="fas fa-info-circle"></div>
+        
+       
+     </div>
+
+
+</header>
+
+
+
+<div class="contact-info">
+    
+     <div id="close-contact-info" class="fas fa-times"></div>
+
+    <div class="info">
+        <i class="fas fa-phone"></i>
+        <h3>Call Us</h3>
+        <p><a href="tel:254115738365">+254115738365</a></p>
+        <p><a href="tel:254115738365">020-2342914</a></p>
+    </div>
+
+    <div class="info">
+        <i class="fas fa-envelope"></i>
+        <h3>Email <Address></Address></h3>
+        <p><a href="mailto:">info@gitugi.ktdateas.com</a></p>
+        <!---->
+    </div>
+
+    <div class="info">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Office Address</h3>
+        <p>533-10106, OTHAYA</p>
+        
+    </div>
+
+    <div class="share">
+        <a href="https://www.facebook.com/" class="fab fa-facebook-f" target="_blank"></a>
+        <a href="https://wa.me/254115738365? text=Thank you for contacting Gitugi Tea Factory Ltd.- Kenya" class="fab fa-whatsapp" target="_blank"></a>
+        <a href="#" class="fab fa-twitter" target="_blank"></a>
+        <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"></a>
+    </div>
+
+</div>
+
+
+
+
+
+<!--===========Subscribe section==========-->
+<section class="subscribe" style="
+background: linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./images/new/greenland_teas.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+opacity:0.9; height: 54.959rem;">
+    <div class="subscribe-content rowzie containery">
+        <div class="dropdown">
+            <div class="select">
+                <span class="selected">
+                    About Us
+                </span>
+                <div class="caret"></div>
+            </div>
+            <ul class="drpmenu">
+                <a href="./dropdown.html"><li class="active">About Us</li></a>
+                <a href="./board.html"><li>Board of Directors</li></a>
+                <a href="./awards.html"><li>Awards & Certificates</li></a>
+                <a href="./news.html"><li>News & Events</li></a>
+                 <a href="./index.html#e-shop"><li>E-Shop</li></a><!----===========**** <a href="#"><li>Annual Reports</li></a>****=====-----><a href="./senior.html"><li>Senior Management</li></a>
+            </ul>
+        </div>
+
+ </div>
+</section>
+
+
+
+
+
+<style>
+    .dropdown{
+       min-width: 27em;
+        position: relative;
+        margin: 2em;
+    }
+    .dropdown *{
+        box-sizing: border-box;
+    }
+    .selected{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .select{
+        background: #345c00;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px goldenrod solid;
+        border-radius: 0.5em;
+        padding: 1em;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    .select-clicked{
+        border: 2px #26489a solid;
+        box-shadow: 0 0 0.8em #26489a;
+    }
+    .select:hover{
+        background-color: #345c00;
+    }
+    .caret{
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 6px solid #fff;
+        transition: 0.3s;
+    }
+
+    .caret-rotate{
+        transform: rotate(180deg);
+    }
+    .drpmenu{
+        list-style: none;
+        padding: 0.2em 0.5em;
+        background-color: #345c00;
+        border: 1px #363a43 solid;
+        box-shadow: 0 0.5em 1em rgba(0, 0, 0,0.2);
+        border-radius: 0.5em;
+        color: #9fa5b5;
+        position: absolute;
+        top: 3em;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        opacity: 0;
+        display: none;
+        transition: 0.2s;
+        z-index: 1;
+    }
+    .drpmenu li{
+        padding: 0.7em 0.5em;
+        margin: 0.3em 0;
+        border-radius: 0.5em;
+        cursor: pointer;
+    }
+    .drpmenu a{
+        text-decoration: none;
+        list-style: none;
+        color: #ffffff;
+        font-size: 2rem;
+        font-weight: 700;
+
+    }
+
+    .drpmenu li:hover{
+        color: #000;
+    }
+    .drpmenu li:hover{
+        background-color: goldenrod;
+    
+    }
+    .active{
+        background-color: goldenrod;
+    }
+    .drpmenu-open{
+        display: block;
+        opacity: 1;
+    }
+</style>
+
+
+<script>
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown =>{
+        const select = dropdown.querySelector('.select');
+        const caret = dropdown.querySelector('.caret');
+        const drpmenu = dropdown.querySelector('.drpmenu');
+        const options = dropdown.querySelectorAll('.drpmenu li');
+        const selected = dropdown.querySelector('.selected');
+
+
+        select.addEventListener('click',()=>{
+            select.classList.toggle('select-clicked');
+            caret.classList.toggle('caret-rotate');
+            drpmenu.classList.toggle('drpmenu-open');
+        });
+
+        options.forEach(option =>{
+            option.addEventListener('click',() => {
+                selected.innerText = option.innerText;
+                select.classList.remove('select-clicked');
+                caret.classList.remove('caret-rotate');
+                drpmenu.classList.remove('drpmenu-open');
+                options.forEach(option => {
+                    option.classList.remove('.active');
+                });
+                option.classList.add('active');
+            });
+        });
+    });
+</script>
+
+<!--====ABOUT US SECTION STARTS===--
+
+<section class="about" id="about">
+
+    <h1 class="heading">We are a symphony of skilled hands & meticulous processes</h1>
+
+    <div class="row">
+      
+    <!--    
+        <div class="video">
+            <video src="" loop muted autoplay></video>
+        </div>
+    -->
+        <!---=========
+    <div class="video">
+        <img src="./gteas/tea_centres.jpg" loop muted autoplay style="height:60rem;"></video>
+    </div>
+
+
+
+        <div class="content">
+            <h3>Every cup of our tea is an invitation to a sensory adventure!</h3>
+            <h4 style="font-size: 1.47rem;color: rgb(255, 179, 0);">Because you'll love what will taste on your palate!</h4>
+            <p>
+           <b>Gitugi Tea Factory Company -Kenya</b> 
+        
+           Our passion lies in transforming the bounty of Kenyan soil into a symphony of flavors.
+           From the moment the sun-kissed leaves arrive at our doorstep, we embark on a meticulous journey.
+           Everything is handled with the utmost care, ensuring only the finest quality graces our production line.
+           We are fully committed to crafting teas that are not only delicious but also consistent in their exquisite taste.
+        
+            </p>
+            <h4 style="font-size: 1.47rem;color: rgb(255, 179, 0)";>Discover the magic of Kenyan tea, crafted with passion and destined to become your new favorite cup.</h4>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+
+    </div>
+    <hr style="border-bottom: 2px solid black; margin:2rem;">
+   <h1 class="heading collo" style="margin: 3rem; text-align: center; justify-content: center;">Your New Home Starts Here</h1>
+   <hr style="border-bottom: 2px solid black; margin:2rem;">
+   
+
+    </div>
+
+</section>
+
+================----->
+<section class="about__left__modifications container____container" id="about">
+
+    
+    <h1 class="heading">Our Story</h1>
+    <h2 style="font-size: 2rem;font-weight: 700;background-color: #345c00;width:60%;padding-top:7.4px;border-radius: 10px; color:bisque;margin-left: 25%;height: 5rem;">Who are we</h2>
+    <div class="about__left__modifications-container">
+    
+        
+      <div class="about__left__modifications-left">
+      
+        
+        <div class="contents">
+            <h3>Join us as we rewrite the story of tea, one exquisite cup at a time.</h3>
+           <h3 style="color:goldenrod; font-size: 1.5rem;">WHERE AND WHEN</h3>
+         <p>
+            Gitugi Tea Factory is located in Mumwe location, Othaya Division, Nyeri South District. It lies just 22km from Nyeri town and 12.3km from Othaya Town.<br> The factory was built in 1983 and commissioned 1984. It serves more than 6050 growers.
+            <br>
+            <h3 style="color:goldenrod; font-size: 1.5rem;">Our Products</h3>
+            This factory has specialized in producing black orthodox tea, which is our signature product.
+            <b>Gitugi manufactures the following clones of tea:<br> 31/8, 6/8 303/377</b><br>
+             
+            The factory also manufactures Black CTC teas in the following grades:<br>
+            <b>Primary grades - BPI, PFI, PD, DI<br>
+            Secondary grades - FI, DUST, TMF2</b>
+            <h2 style="color: goldenrod;">Choosing Gitugi Tea Factory means choosing a cup that transcends the ordinary.</h2>
+
+         </p>
+           
+        </div>
+
+      </div>
+
+      <div class="about__left__modifications-right">
+        <div class="video">
+            <img src="./images/new/current/happy_snr.JPG" loop muted autoplay style="height:60rem;"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+<!--========reputation section-->
+<section class="reputation container">
+    
+    <div class="reputation-cards column">
+        <div class="r-card" style="background: url(./images/new/current/tea_plantations_kiru_copy.png); background-position: cover;background-size: cover;">
+          
+            <h3 style="font-weight: 900;">Mission</h3>
+            <p style="font-size: 1.77rem;font-weight: 600;color:#ffffff;">   To craft the finest quality teas in Kenya, offering an extraordinary experience with every cup. 
+            </p>
+        </div>
+
+        <div class="r-card" style="background: url(./images/new/current/tea_plantations_kiru_copy.png); background-position: cover;background-size: cover;">
+         
+            <h3>Vision</h3>
+            <p style="font-size: 1.77rem;font-weight: 600;color:#ffffff;">To be the leading producer of high quality tea products in the world.</p>
+        </div>
+
+      
+    </div>
+  </section>
+
+
+  <style>
+    
+/*reputation*/
+.reputation{
+    padding: 4em 0;
+    margin: 1.879rem;
+}
+
+.reputation-cards{
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: clamp(2em, 5vw, 5em);
+    padding-top: 4em;
+}
+
+.r-card{
+    background: #ffffff;
+    padding: 2em;
+    border: 1.5px solid #345c00;
+    border-radius: 5px;
+    --webkit-border-radius:5px;
+    -moz-border-radius:5px;
+}
+
+.r-card svg{
+    fill:var(--cl--3--);
+}
+
+.r-card h3{
+    padding: 1rem 0;
+    font-size: 1.9rem;
+}
+
+
+  </style>
+
+
+
+
+<!--========reputation section ends-->
+
+
+
+
+
+
+
+
+
+<section class="about" id="about" style="margin-top: 1.6rem;">
+    <h2 style="font-size: 2rem;background-color: #345c00;width:60%;padding-top:7.4px;border-radius: 10px; color:bisque;margin-left: 25%;height: 6rem;">Tea Growing, Processing & Export</h2>
+
+    <div class="row">
+      
+    <!--    
+        <div class="video">
+            <video src="" loop muted autoplay></video>
+        </div>
+    -->
+    <div class="video">
+        <img src="./images/new/additional/tea_grading.JPG" loop muted autoplay style="height:60rem;"></video>
+    </div>
+
+
+
+        <div class="content">
+            <h3>Choose Gitugi Tea Factory and discover the pinnacle of Kenyan tea</h3>
+           
+         <p>
+            The processed tea is sold through Mombasa Auction, Direct Sales Over Seas, Direct Sales Local, Factory Door Sales and Kenya Tea Packers (KETEPA). Tea is transported to Mombasa for auction through rented trucks where it is received by KTDA personnel and stored in the KTDA Warehouses. The Marketing Department of KTDA allocates the tea to the appointed broker. The broker sends the samples and catalogues to the buyers. At the auction, tea is bought by the highest bidder. The green leaf received from the farmers is recorded and serves as the basis for payment to the farmers. Records of received green leaf are maintained for each grower. Once tea is processed, it is packed and invoiced showing the date, grade and quantities. At auction, the tea is sold to the highest bidder and thereafter the broker sends an auction report to the Factory.
+         <h4 style="color: goldenrod;">You can be confident that by choosing us, you're receiving a truly exceptional tea experience. </h4>       
+            <a href="./index.html#e-shop" class="btn">Grab a packet</a>
+          
+         </p>
+           
+        </div>
+
+    </div>
+    <hr style="border-bottom: 2px solid black; margin:2rem;">
+   <h1 class="heading collo" style="margin: 3rem; text-align: center; justify-content: center;">Our passion for tea is evident in every meticulous detail.</h1>
+   <hr style="border-bottom: 2px solid black; margin:2rem;">
+   
+
+    </div>
+
+</section>
+
+
+
+
+
+<style>
+    .about .box-container____container .mine{
+        height:27vh;
+    }
+    .onei{
+        text-align: justify;
+    }
+</style>
+
+
+
+
+
+
+<div class="concacata">
+ 
+    <div class="boxa">
+        
+        <div class="dream">
+            <img src="./gteas/Tea_pouring.jpg" alt="">
+        
+        </div>
+        <div class="dream">
+        <img src="./gteas/teas-that-can-help-or-harm-your-heart-black-tea.jpg" alt="">
+          
+        </div>
+        <div class="dream">
+         <img src="./gallery/new_images/products-factory.jpg" alt="">
+        
+        </div>
+
+        <div class="dream">
+            <img src="./gallery/Kenyan_Orthodox_Tea_production_ups.jpg" alt="">
+           
+           </div>
+
+        
+    </div>
+</div>
+
+
+<style>
+    .concacata{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1rem;
+        margin: 40px 20px 0 20px;
+    }
+    .concacata .cont_heading{
+        width: 50%;
+        padding-bottom: 50px;
+    }
+    .cont_heading h3{
+       font-size: 3em;
+       font-weight: 700;
+       padding-bottom: 10px;
+       border-bottom: 3px solid #222;
+    }
+    .cont_heading h3 span{
+        font-weight: 300;
+    }
+    .concacata .boxa{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .concacata .boxa .dream{
+        display: flex;
+        flex-direction: column;
+        width: 32.5%;
+        padding-left: 5px;
+    }
+
+    .concacata .boxa .dream img{
+        
+        width: 100%;
+        padding-bottom: 5px;
+border-radius: 5px;
+    }
+
+    @media screen and (max-width:769px) {
+        .concacata .boxa{
+   
+        flex-direction: column;
+   
+    }
+
+    .concacata .boxa .dream{
+   
+        width: 100%;
+    }
+    }
+
+    
+    @media screen and (max-width:643px) {
+        .concacata .cont_heading{
+        width: 100%;
+       
+    }
+   
+    }
+</style>
+
+
+
+
+
+
+
+
+
+<style>
+.parental{
+   
+    background:  var(--white);
+    margin: 2.5rem;
+}
+.parental p{
+    color: var(--white);
+}
+.category h4{
+    color: goldenrod;
+}
+.category p{
+    color: #000;
+    font-weight: 700;
+}
+</style>
+
+<hr style="border-bottom: 2px solid black; margin:2rem;">
+<h2 class="heading collo" style="margin:3rem;">Quality is not only our standard.
+    It's also an attitude instilled in our company.
+</h2>
+
+<hr style="border-bottom: 2px solid black; margin:2rem;">
+
+
+
+
+<!--====FOOTER  SECTION STARTS===-->
+<!--====FOOTER  SECTION STARTS===-->
+
+
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__1 mobile-hide">
+            <a href="" class="footer__logo"><h3>About Us</h3></a>
+            <p>
+          Nestled amidst lush green fields in Nyeri county, we are a renowned tea factory dedicated to crafting exceptional tea experiences. We are rapidly rising as the premier tea factory in Kenya, recognized for our unwavering commitment to excellence. Come join us. </p>
+        </div>
+        <div class="footer__2 mobile-hide">
+            <h3>Gitugi<span style="color:var(--white);">Tea </span>Factory</h3>
+            <ul class="permalinks">
+                <li><a href="./index.html"><b>Home</b></a></li>
+                <li><a href="./dropdown.html"><b>About Us</b></a></li>
+                <li><a href="./categories.html"><b>Categories</b></a></li>
+                
+                <li><a href="./services.html"><b>Our Services</b></a></li>
+            </ul>
+        </div>
+
+        <div class="footer__3 mobile-hide">
+            <h3>About Us&#128187;</h3>
+            <p><b><a href="./board.html">Board of Directors</a></b></p>
+            <p><b><a href="./news.html">News & Events</a></b></p>
+            <p><b><a href="./awards.html">Awards & Certificates</a></b></p>
+            <p><b><a href="./senior.html">Senior Management</a></b></p>
+            <p><b><a href="./index.html#e-shop">Our E-Shop</a></b></p>
+        </div>
+
+
+        <div class="footer__4">
+            <h3>Contact Us &#9742; &#128231;</h3>
+            <p>Reach us through:</p>
+            <div>
+                <p><b>0115738365</b></p>
+                <hr>
+                <p><b>020-2342914</b></p>
+                <hr>
+                <a href="info@gitugi.ktdateas.com"><b>info@gitugi.ktdateas.com</b></a>
+
+            </div>
+            <ul class="footer__socials">
+                <li><a href="https://wa.me/254114138091? text=Thank you for contacting TechHold Developers Company-Kenya.&nbsp; Let us embrace the digital world together. We'll make you a website you'll love"><i class="uil uil-whatsapp"></i></a></li>
+                <li><a href="#"><i class="uil uil-facebook"></i></a></li>
+                <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+                <li><a href="#"><i class="uil uil-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        
+    </div>
+    <div class="footer__copyright">
+        <small>Copyright &copy; Gitugi Tea Factory Company Limited- Kenya</small>
+    </div>
+</footer>
+
+<!--====FOOTER SECTION ENDS===-->
+<style>
+    .collo{
+        border-right: 1rem solid var(--yellow);
+    }
+</style>
+
+
+<!--====FOOTER SECTION ENDS===-->
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="./main.js"></script>
+  <script>
+    var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?64007';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+    "enabled":true,
+    "chatButtonSetting":{
+        "backgroundColor":"#345c00",
+        "ctaText":"Chat with us",
+        "borderRadius":"25",
+        "marginLeft": "0",
+        "marginRight": "20",
+        "marginBottom": "20",
+        "ctaIconWATI":false,
+        "position":"right"
+    },
+    "brandSetting":{
+        "brandName":"Gitugi Tea Factory",
+        "brandSubTitle":"undefined",
+        "brandImg":"https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
+        "welcomeText":"Thank you, You have reached Gitugi Tea Factory..",
+        "messageText":"Hello, %0A I have a question about......",
+        "backgroundColor":"#345c00",
+        "ctaText":"Chat with Gitugi",
+        "borderRadius":"25",
+        "autoShow":false,
+        "phoneNumber":"254741230513"
+    }
+    };
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
+
+
+
+<script>
+    lightGallery(document.querySelector('.projects .box-container____container'));
+</script>
+
+</body>
+</html>
