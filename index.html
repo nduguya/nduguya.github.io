@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Factory Blog - Your Source for Tea Industry Insights</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#345c00">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        #installBtn{
+            padding: 10px 20px;
+            background-color: #345c00;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="installBtn" style="display:none">Install Gitugi App</button>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">Tea Factory Blog</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="about.html">Latest</a></li>
+                <li><a href="#popular">Popular</a></li>
+                <li><a href="#opinions">Opinions</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Discover the World of Tea</h1>
+            <p>Your premier source for tea industry insights, trends, and stories</p>
+        </div>
+    </header>
+
+    <!-- Breaking News Section -->
+    <section class="breaking-news">
+        <div class="container">
+            <h2 class="section-title">Breaking News</h2>
+            <div class="news-slider">
+                <article class="news-item">
+                    <span class="news-tag">Breaking</span>
+                    <div class="news-item-image">
+                        <img src="https://images.unsplash.com/photo-1582650625119-3a31f8fa2699?w=800" alt="Modern Tea Processing">
+                    </div>
+                    <div class="news-content">
+                        <h3>Revolutionary Tea Processing Technology Unveiled</h3>
+                        <p>Our factory introduces AI-powered tea processing that enhances flavor profiles while reducing energy consumption by 40%. This groundbreaking technology sets new standards for sustainable tea production.</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> 2 hours ago</span>
+                            <span><i class="far fa-eye"></i> 1.2K views</span>
+                            <span><i class="far fa-comment"></i> 28 comments</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item">
+                    <span class="news-tag">Trending</span>
+                    <div class="news-item-image">
+                        <img src="https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?w=800" alt="Organic Tea Farming">
+                    </div>
+                    <div class="news-content">
+                        <h3>Organic Certification Achievement</h3>
+                        <p>Tea Factory achieves prestigious international organic certification for sustainable farming practices, marking a milestone in our commitment to environmental stewardship.</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> 5 hours ago</span>
+                            <span><i class="far fa-eye"></i> 856 views</span>
+                            <span><i class="far fa-comment"></i> 15 comments</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item">
+                    <span class="news-tag">Latest</span>
+                    <div class="news-item-image">
+                        <img src="https://images.unsplash.com/photo-1563822249548-9a72b6353cd1?w=800" alt="Award Winning Tea">
+                    </div>
+                    <div class="news-content">
+                        <h3>New Tea Blend Wins Global Award</h3>
+                        <p>Our signature mountain-grown purple tea blend receives recognition at International Tea Masters Cup, showcasing the exceptional quality of our innovative tea processing methods.</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> 8 hours ago</span>
+                            <span><i class="far fa-eye"></i> 642 views</span>
+                            <span><i class="far fa-comment"></i> 12 comments</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Categories Section with Articles -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Tea Topics</h2>
+            <div class="category-tabs">
+                <button class="tab active" data-category="all">All</button>
+                <button class="tab" data-category="farming">Farming</button>
+                <button class="tab" data-category="processing">Processing</button>
+                <button class="tab" data-category="market">Market Trends</button>
+                <button class="tab" data-category="sustainability">Sustainability</button>
+                <button class="tab" data-category="health">Health Benefits</button>
+            </div>
+            <div class="articles-grid">
+                <!-- Farming Articles -->
+                <article class="article-card" data-category="farming">
+                    <img src="https://images.unsplash.com/photo-1582645968319-0f6b6e0ff2ce?w=800" alt="Tea Farming">
+                    <div class="article-content">
+                        <span class="category">Farming</span>
+                        <h3>Advanced Irrigation Systems in Tea Farming</h3>
+                        <p>Implementing smart irrigation solutions for optimal tea plant growth...</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> March 20, 2024</span>
+                            <span><i class="far fa-clock"></i> 7 min read</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-card" data-category="farming">
+                    <img src="https://images.unsplash.com/photo-1576092762791-dd9e2220abd1?w=800" alt="Organic Farming">
+                    <div class="article-content">
+                        <span class="category">Farming</span>
+                        <h3>Organic Pest Control Methods</h3>
+                        <p>Natural solutions for protecting tea plants from common pests...</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> March 18, 2024</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Processing Articles -->
+                <article class="article-card" data-category="processing">
+                    <img src="https://images.unsplash.com/photo-1567922045116-2a00fae2ed03?w=800" alt="Tea Processing">
+                    <div class="article-content">
+                        <span class="category">Processing</span>
+                        <h3>Modern Tea Oxidation Techniques</h3>
+                        <p>Latest developments in tea oxidation for enhanced flavor profiles...</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> March 15, 2024</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-card" data-category="processing">
+                    <img src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800" alt="Tea Drying">
+                    <div class="article-content">
+                        <span class="category">Processing</span>
+                        <h3>Solar-Powered Tea Drying Innovation</h3>
+                        <p>Sustainable drying methods that preserve tea quality...</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> March 12, 2024</span>
+                            <span><i class="far fa-clock"></i> 4 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Market Trends Articles -->
+                <article class="article-card" data-category="market">
+                    <img src="https://images.unsplash.com/photo-1523920290228-4f321a939b4c?w=800" alt="Tea Market">
+                    <div class="article-content">
+                        <span class="category">Market Trends</span>
+                        <h3>Global Tea Market Analysis 2024</h3>
+                        <p>Comprehensive overview of international tea trade patterns...</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> March 10, 2024</span>
+                            <span><i class="far fa-clock"></i> 8 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sustainability Articles -->
+                <article class="article-card" data-category="sustainability">
+                    <img src="https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?w=800" alt="Sustainable Tea">
+                    <div class="article-content">
+                        <span class="category">Sustainability</span>
+                        <h3>Carbon-Neutral Tea Production</h3>
+                        <p>Achieving sustainability goals through innovative practices...</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> March 8, 2024</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Section Enhanced -->
+    <section class="popular-articles" id="popular">
+        <div class="container">
+            <h2 class="section-title">Most Read</h2>
+            <div class="popular-grid">
+                <article class="popular-card">
+                    <div class="rank">1</div>
+                    <img src="https://images.unsplash.com/photo-1544252890-c3e99dc1b3c8?w=800" alt="Premium Tea">
+                    <div class="popular-content">
+                        <h3>The Art of Premium Tea Blending</h3>
+                        <p>Master tea blenders share their secrets for creating perfect blends...</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-eye"></i> 25K views</span>
+                            <span><i class="far fa-heart"></i> 1.2K</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="popular-card">
+                    <div class="rank">2</div>
+                    <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=800" alt="Tea Ceremony">
+                    <div class="popular-content">
+                        <h3>Modern Tea Ceremonies</h3>
+                        <p>How traditional ceremonies are evolving in the digital age...</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-eye"></i> 18K views</span>
+                            <span><i class="far fa-heart"></i> 956</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opinions Section Enhanced -->
+    <section class="opinions" id="opinions">
+        <div class="container">
+            <h2 class="section-title">Expert Insights</h2>
+            <div class="opinions-grid">
+                <article class="opinion-card">
+                    <div class="author">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200" alt="Author">
+                        <div class="author-info">
+                            <h4>Dr. Sarah Chen</h4>
+                            <span>Tea Research Director</span>
+                        </div>
+                    </div>
+                    <h3>The Future of Automated Tea Processing</h3>
+                    <p>Exploring how AI and robotics are revolutionizing tea production while maintaining traditional quality standards...</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> March 15, 2024</span>
+                        <span><i class="far fa-comment"></i> 45 Comments</span>
+                    </div>
+                </article>
+                <article class="opinion-card">
+                    <div class="author">
+                        <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=200" alt="Author">
+                        <div class="author-info">
+                            <h4>James Thompson</h4>
+                            <span>Sustainability Expert</span>
+                        </div>
+                    </div>
+                    <h3>Sustainable Practices in Modern Tea Farming</h3>
+                    <p>Implementing eco-friendly solutions without compromising yield and quality...</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> March 12, 2024</span>
+                        <span><i class="far fa-comment"></i> 32 Comments</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advertisements Section Enhanced -->
+    <section class="advertisements">
+        <div class="container">
+            <h2 class="section-title">Featured Partners</h2>
+            <div class="ads-grid">
+                <div class="ad-card">
+                    <img src="https://images.unsplash.com/photo-1563822249548-9a72b6353cd1?w=800" alt="Premium Tea Equipment">
+                    <div class="ad-content">
+                        <span class="sponsored-tag">Sponsored</span>
+                        <h3>Next-Gen Tea Processing Equipment</h3>
+                        <p>Discover our latest line of energy-efficient tea processing machinery, designed for maximum yield and quality...</p>
+                        <a href="#" class="cta-button">Learn More</a>
+                    </div>
+                </div>
+                <div class="ad-card">
+                    <img src="https://images.unsplash.com/photo-1582645968319-0f6b6e0ff2ce?w=800" alt="Organic Certification">
+                    <div class="ad-content">
+                        <span class="sponsored-tag">Featured</span>
+                        <h3>Organic Certification Program</h3>
+                        <p>Get your tea plantation certified organic with our comprehensive support program...</p>
+                        <a href="#" class="cta-button">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="comments">
+        <div class="container">
+            <h2 class="section-title">Discussion</h2>
+            <div class="comments-section">
+                <div class="comment-form">
+                    <h3>Join the Discussion</h3>
+                    <form id="commentForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Comment" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Post Comment</button>
+                    </form>
+                </div>
+                <div class="comments-list">
+                    <!-- Comments will be added dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tea FAQ Section -->
+    <section class="tea-faq">
+        <div class="container">
+            <h2 class="section-title">Tea in XYZ: Your Complete Guide</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Best Tea Factory in XYZ</h3>
+                    <p>XYZ Tea Factory Ltd. has consistently produced the highest quality tea in the country for over 50 years. Their commitment to traditional processing methods and sustainable farming practices has earned them multiple international awards.</p>
+                    <ul class="factory-highlights">
+                        <li>ISO 9001:2015 certified</li>
+                        <li>Organic farming practices</li>
+                        <li>State-of-the-art processing facilities</li>
+                        <li>Fair trade certified</li>
+                    </ul>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Tea Prices in XYZ</h3>
+                    <div class="price-info">
+                        <p>Current market prices (as of 2024):</p>
+                        <ul>
+                            <li>Premium Black Orthodox: $25-30/kg</li>
+                            <li>Standard CTC: $15-20/kg</li>
+                            <li>Bulk Tea Leaves: $10-15/kg</li>
+                        </ul>
+                        <p class="note">Prices may vary based on season and quality grade.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Best Tea Varieties in XYZ</h3>
+                    <div class="tea-varieties">
+                        <div class="variety-card">
+                            <h4>Premium Orthodox</h4>
+                            <p>Known for its delicate flavor and golden tips</p>
+                        </div>
+                        <div class="variety-card">
+                            <h4>High-Grade CTC</h4>
+                            <p>Perfect for strong, bold tea lovers</p>
+                        </div>
+                        <div class="variety-card">
+                            <h4>Specialty Green</h4>
+                            <p>Fresh and aromatic with health benefits</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Tea Grades in XYZ</h3>
+                    <div class="grade-info">
+                        <h4>Premium Grades:</h4>
+                        <ul>
+                            <li>Golden Tips (Tippy Golden Flowery Orange Pekoe)</li>
+                            <li>Flowery Orange Pekoe (FOP)</li>
+                            <li>Orange Pekoe (OP)</li>
+                        </ul>
+                        <h4>Standard Grades:</h4>
+                        <ul>
+                            <li>Broken Orange Pekoe (BOP)</li>
+                            <li>CTC Premium</li>
+                            <li>CTC Standard</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Popular Tea Choices in XYZ</h3>
+                    <div class="popular-teas">
+                        <div class="tea-preference">
+                            <h4>Traditional Choice</h4>
+                            <p>Strong CTC tea with milk and sugar</p>
+                        </div>
+                        <div class="tea-preference">
+                            <h4>Modern Choice</h4>
+                            <p>Premium Orthodox with honey</p>
+                        </div>
+                        <div class="tea-preference">
+                            <h4>Health-Conscious Choice</h4>
+                            <p>Green tea with lemon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Best Value Tea Options</h3>
+                    <div class="value-teas">
+                        <div class="value-card">
+                            <h4>Budget-Friendly Options</h4>
+                            <ul>
+                                <li>CTC Standard Grade ($10-12/kg)</li>
+                                <li>Bulk Tea Leaves ($8-10/kg)</li>
+                                <li>Broken Orange Pekoe ($12-15/kg)</li>
+                            </ul>
+                        </div>
+                        <div class="value-card">
+                            <h4>Where to Buy</h4>
+                            <ul>
+                                <li>Local Tea Markets</li>
+                                <li>Factory Outlets</li>
+                                <li>Certified Tea Shops</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Excellence Showcase Section -->
+    <section class="excellence-showcase">
+        <div class="container">
+            <div class="excellence-header">
+                <h2 class="section-title">Leading Tea Manufacturer & Exporter</h2>
+                <p class="section-subtitle">Setting Global Standards in Tea Production Since 1970</p>
+            </div>
+
+            <!-- Key Achievements -->
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>International Recognition</h3>
+                    <ul>
+                        <li>ISO 9001:2015 Certified</li>
+                        <li>HACCP Certified</li>
+                        <li>Fair Trade Certified</li>
+                        <li>Organic Certified</li>
+                    </ul>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Export Network</h3>
+                    <ul>
+                        <li>Exports to 45+ Countries</li>
+                        <li>Strategic Distribution Centers</li>
+                        <li>24/7 Customer Support</li>
+                        <li>Custom Packaging Solutions</li>
+                    </ul>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustainable Practices</h3>
+                    <ul>
+                        <li>Zero Waste Production</li>
+                        <li>Solar Energy Powered</li>
+                        <li>Water Conservation</li>
+                        <li>Eco-friendly Packaging</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Quality Assurance -->
+            <div class="quality-assurance">
+                <h2 class="section-title">Uncompromising Quality Standards</h2>
+                <div class="quality-grid">
+                    <div class="quality-item">
+                        <h3>Premium Tea Grades</h3>
+                        <div class="grade-list">
+                            <div class="grade-card">
+                                <h4>Black Orthodox</h4>
+                                <ul>
+                                    <li>Golden Tips (TGFOP)</li>
+                                    <li>Flowery Orange Pekoe (FOP)</li>
+                                    <li>Orange Pekoe (OP)</li>
+                                </ul>
+                            </div>
+                            <div class="grade-card">
+                                <h4>CTC Tea</h4>
+                                <ul>
+                                    <li>Premium CTC</li>
+                                    <li>Standard CTC</li>
+                                    <li>Broken Orange Pekoe (BOP)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quality-item">
+                        <h3>Quality Control Process</h3>
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <span class="step-number">1</span>
+                                <h4>Raw Material Selection</h4>
+                                <p>Rigorous testing of tea leaves for freshness and quality</p>
+                            </div>
+                            <div class="process-step">
+                                <span class="step-number">2</span>
+                                <h4>Processing Standards</h4>
+                                <p>State-of-the-art machinery and controlled environment</p>
+                            </div>
+                            <div class="process-step">
+                                <span class="step-number">3</span>
+                                <h4>Quality Testing</h4>
+                                <p>Multiple quality checks at every stage</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Market Leadership -->
+            <div class="market-leadership">
+                <h2 class="section-title">Market Leadership & Innovation</h2>
+                <div class="leadership-grid">
+                    <div class="leadership-card">
+                        <div class="leadership-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Market Position</h3>
+                        <ul>
+                            <li>Top 3 Tea Exporter in XYZ</li>
+                            <li>Annual Production: 50,000+ Tons</li>
+                            <li>Market Share: 25%</li>
+                            <li>Year-over-Year Growth: 15%</li>
+                        </ul>
+                    </div>
+
+                    <div class="leadership-card">
+                        <div class="leadership-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>Innovation Hub</h3>
+                        <ul>
+                            <li>R&D Center for Tea Innovation</li>
+                            <li>Custom Blend Development</li>
+                            <li>New Product Lines</li>
+                            <li>Sustainable Packaging Solutions</li>
+                        </ul>
+                    </div>
+
+                    <div class="leadership-card">
+                        <div class="leadership-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Customer Success</h3>
+                        <ul>
+                            <li>98% Customer Satisfaction</li>
+                            <li>24/7 Technical Support</li>
+                            <li>Custom Solutions</li>
+                            <li>On-time Delivery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Health Benefits -->
+            <div class="health-benefits">
+                <h2 class="section-title">Premium Tea Health Benefits</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Heart Health</h3>
+                        <p>Rich in antioxidants that support cardiovascular health</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Mental Alertness</h3>
+                        <p>Natural caffeine for sustained focus and energy</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Immune Support</h3>
+                        <p>High levels of polyphenols for immune system support</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Natural Wellness</h3>
+                        <p>100% natural ingredients with no additives</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h2>Experience the Finest Tea</h2>
+                    <p>Join thousands of satisfied customers worldwide</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="cta-button primary">Request Quote</a>
+                        <a href="#" class="cta-button secondary">View Products</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Tea Factory Blog</h3>
+                    <p>Your trusted source for tea industry insights and updates.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#latest">Latest</a></li>
+                        <li><a href="#popular">Popular</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tea Factory Blog. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
